@@ -9,3 +9,5 @@ class Race
     candidates << candidate_info
   end
 end
+
+  
