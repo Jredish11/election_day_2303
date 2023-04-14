@@ -1,7 +1,7 @@
 require './lib/candidate'
 
 RSpec.describe Candidate do
-  describe "Candidate"
+  describe "Candidate" do
     it "exits" do
       diana = Candidate.new({name: "Diana D", party: :democrat})
       expect(diana).to be_a(Candidate)
@@ -23,6 +23,7 @@ RSpec.describe Candidate do
       diana.vote_for!
       expect(diana.votes).to eq(4)
     end
+  end
 end
 
 

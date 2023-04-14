@@ -68,4 +68,3 @@ end
 
 
 
-#vote_counts	A hash with each candidate's name as a key and their count of votes as the value.
