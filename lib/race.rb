@@ -6,6 +6,6 @@ class Race
   end
 
   def register_candidate!(candidate_info)
-    candidates << Candidate.new(candidate_info)
+    candidates << candidate_info
   end
 end
