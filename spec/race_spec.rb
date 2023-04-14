@@ -2,7 +2,7 @@ require './lib/candidate'
 require './lib/race'
 
 RSpec.describe Race do
-  describe "Candidate" do
+  describe "Race" do
     it "exists" do
       race = Race.new("Texas Governor")
       expect(race).to be_a(Race)
@@ -29,8 +29,6 @@ RSpec.describe Race do
       race.register_candidate!(candidate2)
       expect(race.candidates).to eq([candidate1, candidate2])
     end
-
-
   end
 end
 
