@@ -10,6 +10,6 @@ class Election
   end
 
   def candidates
-    races.map { |race| race.candidates }.flatten
+    races.flat_map { |race| race.candidates }
   end
 end
