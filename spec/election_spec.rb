@@ -13,6 +13,18 @@ RSpec.describe Election do
       election = Election.new("2000")
       expect(election.year).to eq("2000")
     end
+
+    it "has an empty list of election races" do
+      election = Election.new("2000")
+      expect(election.races).to eq([])
+    end
+
+    it "adds a race to the list of election races" do
+      election = Election.new("2000")
+      governor = Race.new("Texas Governor")
+      election.add_race(governor)
+      expect(election.races).to eq([governor])
+    end
   end
 end
 
