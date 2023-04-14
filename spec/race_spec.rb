@@ -37,6 +37,13 @@ RSpec.describe Race do
       expect(race.open?).to eq(true)
     end
   end
+
+  describe "close!" do
+    it "close race should no longer be open" do
+      race = Race.new("Texas Governor")
+      expect(race.close!).to eq(false)
+    end
+  end
 end
 
 
