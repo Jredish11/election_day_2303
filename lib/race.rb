@@ -17,4 +17,12 @@ class Race
   def close!
     @open = false
   end
+
+  def winner
+    if open?
+      false
+    else
+      true
+    end
+  end
 end
